@@ -28,6 +28,8 @@ void *writer(void *param);
 void init_passwords(char passwords[][PASSWORD_LEN + 1], int size);
 int check_password(const char *password, char passwords[][PASSWORD_LEN + 1], int size);
 
+char passwords[10][PASSWORD_LEN + 1];
+
 int main(int argc, char *argv[])
 {
     if (argc != 3)
@@ -45,7 +47,6 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    char passwords[10][PASSWORD_LEN + 1];
     init_passwords(passwords, 10);
 
     pthread_t r_threads[MAX_THREADS], w_threads[MAX_THREADS];
