@@ -1,0 +1,301 @@
+Last login: Wed May 29 20:58:30 on ttys006
+feyzieren@192 ~ % cd workspace 
+feyzieren@192 workspace % cd cmpe382
+feyzieren@192 cmpe382 % cd reader-writer-problem-with-password 
+feyzieren@192 reader-writer-problem-with-password % gcc -o exeForMac mainForMac.c -pthread
+feyzieren@192 reader-writer-problem-with-password % ./exeForMac 4 6 
+Number of readers: 4
+Number of writers: 6
+
+Thread No  Validity(real/dummy)  Role(reader/writer)  Value read/written
+1          real                    reader              0
+2          real                    reader              0
+3          real                    reader              0
+4          real                    reader              0
+1          dummy                    reader              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+4          dummy                    reader              No permission
+1          real                    writer              147
+2          real                    writer              383
+3          real                    writer              247
+4          real                    writer              109
+5          real                    writer              340
+6          real                    writer              123
+1          dummy                    writer              No permission
+2          dummy                    writer              No permission
+3          dummy                    writer              No permission
+4          dummy                    writer              No permission
+5          dummy                    writer              No permission
+6          dummy                    writer              No permission
+2          dummy                    reader              No permission
+1          dummy                    reader              No permission
+1          dummy                    writer              No permission
+5          dummy                    writer              No permission
+2          dummy                    writer              No permission
+6          dummy                    writer              No permission
+3          dummy                    writer              No permission
+3          dummy                    reader              No permission
+4          dummy                    reader              No permission
+4          dummy                    writer              No permission
+1          real                    reader              123
+2          real                    reader              123
+4          real                    reader              123
+3          real                    reader              123
+1          real                    writer              279
+2          dummy                    reader              No permission
+2          real                    writer              198
+3          real                    writer              56
+4          real                    writer              415
+5          real                    writer              277
+6          real                    writer              206
+1          dummy                    reader              No permission
+1          dummy                    writer              No permission
+6          dummy                    writer              No permission
+4          dummy                    reader              No permission
+5          dummy                    writer              No permission
+2          dummy                    writer              No permission
+3          dummy                    writer              No permission
+3          dummy                    reader              No permission
+4          dummy                    writer              No permission
+1          dummy                    writer              No permission
+2          dummy                    reader              No permission
+1          dummy                    reader              No permission
+6          dummy                    writer              No permission
+4          dummy                    reader              No permission
+5          dummy                    writer              No permission
+3          dummy                    writer              No permission
+4          dummy                    writer              No permission
+2          dummy                    writer              No permission
+3          dummy                    reader              No permission
+2          real                    writer              392
+6          real                    writer              307
+1          real                    reader              307
+2          real                    reader              307
+4          real                    reader              307
+3          real                    reader              307
+1          real                    writer              50
+3          real                    writer              33
+4          real                    writer              259
+5          real                    writer              169
+2          dummy                    reader              No permission
+1          dummy                    reader              No permission
+1          dummy                    writer              No permission
+5          dummy                    writer              No permission
+4          dummy                    reader              No permission
+3          dummy                    reader              No permission
+6          dummy                    writer              No permission
+3          dummy                    writer              No permission
+4          dummy                    writer              No permission
+2          dummy                    writer              No permission
+1          real                    reader              169
+2          real                    writer              399
+6          real                    writer              81
+3          real                    reader              81
+3          real                    writer              307
+5          real                    writer              392
+4          real                    reader              392
+1          real                    writer              133
+2          real                    reader              133
+4          real                    writer              336
+5          real                    writer              65
+3          real                    reader              65
+1          real                    reader              65
+6          real                    writer              5
+3          real                    writer              368
+1          real                    writer              151
+2          real                    writer              174
+4          real                    reader              174
+4          real                    writer              37
+2          real                    reader              37
+feyzieren@192 reader-writer-problem-with-password % ./exeForMac 3 6 
+Number of readers: 3
+Number of writers: 6
+
+Thread No  Validity(real/dummy)  Role(reader/writer)  Value read/written
+1          real                    reader              0
+2          real                    reader              0
+3          real                    reader              0
+1          dummy                    reader              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+1          real                    writer              62
+2          real                    writer              147
+3          real                    writer              383
+4          real                    writer              247
+5          real                    writer              340
+1          dummy                    writer              No permission
+2          dummy                    writer              No permission
+3          dummy                    writer              No permission
+6          real                    writer              400
+4          dummy                    writer              No permission
+5          dummy                    writer              No permission
+6          dummy                    writer              No permission
+1          dummy                    reader              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+1          dummy                    writer              No permission
+2          dummy                    writer              No permission
+5          dummy                    writer              No permission
+3          dummy                    writer              No permission
+4          dummy                    writer              No permission
+6          dummy                    writer              No permission
+1          real                    reader              400
+2          real                    reader              400
+3          real                    reader              400
+1          real                    writer              213
+2          real                    writer              279
+3          real                    writer              198
+4          real                    writer              56
+5          real                    writer              415
+6          real                    writer              277
+2          dummy                    reader              No permission
+3          dummy                    writer              No permission
+5          dummy                    writer              No permission
+1          dummy                    writer              No permission
+3          dummy                    reader              No permission
+2          dummy                    writer              No permission
+1          dummy                    reader              No permission
+4          dummy                    writer              No permission
+6          dummy                    writer              No permission
+5          dummy                    writer              No permission
+3          dummy                    reader              No permission
+1          dummy                    reader              No permission
+2          dummy                    reader              No permission
+2          dummy                    writer              No permission
+4          dummy                    writer              No permission
+3          dummy                    writer              No permission
+1          dummy                    writer              No permission
+6          dummy                    writer              No permission
+1          real                    reader              277
+2          real                    reader              277
+3          real                    reader              277
+2          real                    writer              206
+1          real                    writer              392
+4          real                    writer              307
+5          real                    writer              50
+3          real                    writer              33
+6          real                    writer              259
+5          dummy                    writer              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+1          dummy                    reader              No permission
+4          dummy                    writer              No permission
+6          dummy                    writer              No permission
+2          dummy                    writer              No permission
+3          dummy                    writer              No permission
+1          dummy                    writer              No permission
+3          real                    reader              259
+1          real                    writer              169
+1          real                    reader              169
+2          real                    reader              169
+5          real                    writer              399
+6          real                    writer              81
+2          real                    writer              307
+4          real                    writer              392
+3          real                    writer              133
+3          real                    reader              133
+1          real                    writer              336
+1          real                    reader              336
+2          real                    reader              336
+5          real                    writer              65
+2          real                    writer              5
+3          real                    writer              368
+6          real                    writer              151
+4          real                    writer              174
+feyzieren@192 reader-writer-problem-with-password % ./exeForMac 6 3 
+Number of readers: 6
+Number of writers: 3
+
+Thread No  Validity(real/dummy)  Role(reader/writer)  Value read/written
+2          real                    reader              0
+1          real                    reader              0
+3          real                    reader              0
+6          real                    reader              0
+1          dummy                    reader              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+4          real                    reader              0
+5          real                    reader              0
+4          dummy                    reader              No permission
+5          dummy                    reader              No permission
+6          dummy                    reader              No permission
+1          real                    writer              247
+2          real                    writer              109
+3          real                    writer              340
+1          dummy                    writer              No permission
+2          dummy                    writer              No permission
+3          dummy                    writer              No permission
+4          dummy                    reader              No permission
+5          dummy                    reader              No permission
+1          dummy                    reader              No permission
+2          dummy                    writer              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+6          dummy                    reader              No permission
+1          dummy                    writer              No permission
+3          dummy                    writer              No permission
+2          real                    reader              340
+1          real                    reader              340
+6          real                    reader              340
+1          real                    writer              309
+3          real                    reader              309
+4          real                    reader              309
+5          real                    reader              309
+2          real                    writer              77
+3          real                    writer              400
+5          dummy                    reader              No permission
+2          dummy                    writer              No permission
+6          dummy                    reader              No permission
+1          dummy                    writer              No permission
+1          dummy                    reader              No permission
+3          dummy                    reader              No permission
+3          dummy                    writer              No permission
+4          dummy                    reader              No permission
+2          dummy                    reader              No permission
+5          dummy                    reader              No permission
+3          dummy                    writer              No permission
+2          dummy                    writer              No permission
+1          dummy                    writer              No permission
+1          dummy                    reader              No permission
+6          dummy                    reader              No permission
+2          dummy                    reader              No permission
+3          dummy                    reader              No permission
+4          dummy                    reader              No permission
+2          real                    reader              400
+4          real                    reader              400
+6          real                    reader              400
+2          real                    writer              213
+1          real                    reader              213
+1          real                    writer              279
+3          real                    reader              279
+5          real                    reader              279
+3          real                    writer              198
+3          dummy                    reader              No permission
+3          dummy                    writer              No permission
+4          dummy                    reader              No permission
+1          dummy                    reader              No permission
+5          dummy                    reader              No permission
+1          dummy                    writer              No permission
+2          dummy                    reader              No permission
+6          dummy                    reader              No permission
+2          dummy                    writer              No permission
+3          real                    reader              198
+4          real                    reader              198
+1          real                    reader              198
+6          real                    reader              198
+2          real                    reader              198
+3          real                    writer              56
+2          real                    writer              415
+5          real                    reader              415
+1          real                    writer              277
+1          real                    reader              277
+3          real                    reader              277
+3          real                    writer              206
+4          real                    reader              206
+5          real                    reader              206
+2          real                    reader              206
+6          real                    reader              206
+2          real                    writer              392
+1          real                    writer              307
+feyzieren@192 reader-writer-problem-with-password % 

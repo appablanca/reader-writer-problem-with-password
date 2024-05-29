@@ -137,7 +137,6 @@ void *reader(void *param)
 
         // Reading section
         printf("%d          real                    reader              %d\n", info->id, BUFFER);
-        sleep(1);
 
         // Release read access
         dispatch_semaphore_wait(mutex, DISPATCH_TIME_FOREVER);
@@ -148,7 +147,7 @@ void *reader(void *param)
         }
         dispatch_semaphore_signal(mutex);
 
-        sleep(1); // Simulating time between reads
+        sleep(2); // Simulating time between reads
     }
     pthread_exit(0);
 }
@@ -169,13 +168,12 @@ void *writer(void *param)
         dispatch_semaphore_wait(rw_mutex, DISPATCH_TIME_FOREVER);
 
         // Writing section
-        BUFFER = rand() % 10000;
+        BUFFER = rand() % 420;
         printf("%d          real                    writer              %d\n", info->id, BUFFER);
-        sleep(1);
 
         dispatch_semaphore_signal(rw_mutex);
 
-        sleep(1); // Simulating time between writes
+        sleep(2); // Simulating time between writes
     }
     pthread_exit(0);
 }
@@ -184,7 +182,7 @@ void init_passwords(char passwords[][PASSWORD_LEN + 1], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        snprintf(passwords[i], PASSWORD_LEN + 1, "%06d", rand() % 1000000);
+        snprintf(passwords[i], PASSWORD_LEN + 1, "%06d", rand() % 42000);
     }
 }
 
